@@ -309,23 +309,23 @@ body{
   h2{
     font-family: 'Montserrat', sans-serif;
   }
-  .featured-posts{
+  .featured-posts,.popular-posts{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
   }
-  .featured-posts > div{
+  .featured-posts > div,.popular-posts > div{
     background-color: #f1f1f1;
     margin: 15px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     width: 350px;
     height: 300px;
   }
-  .featured{
+  .featured,.popular{
     position: relative;
   }
-  .feature-text{
+  .feature-text,.popular-text{
     position: absolute;
     left: 5px;
     bottom: 25px;
@@ -338,7 +338,15 @@ body{
     height: 80%;
     opacity: .9;
   }
+  .popular-politics-img,.popular-fashion-img,.popular-sports-img,.popular-music-img{
+    width: 100%;
+    height: 80%;
+    opacity: .9;
+  }
   .featured-politics-img:hover,.featured-fashion-img:hover,.featured-sports-img:hover,.featured-music-img:hover{
+    opacity: 1;
+  }
+  .popular-politics-img:hover,.popular-fashion-img:hover,.popular-sports-img:hover,.popular-music-img:hover{
     opacity: 1;
   }
 
