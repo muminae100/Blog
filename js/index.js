@@ -45,12 +45,14 @@ slideIndex++;
 
 /* Set the width of the side navigation to 250px */
 function openNav() {
-  document.getElementById("mySidenav").style.width = "300px";
+  document.getElementById("mySidenav").style.width = "350px";
+  document.body.style.backgroundColor = "rgba(0,0,0, .4)";
 }
 
 /* Set the width of the side navigation to 0 */
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
+  document.body.style.backgroundColor = "white";
 } 
 
 function getArticles(){
@@ -58,15 +60,25 @@ function getArticles(){
   .then(response =>response.json()
   )
   .then(json =>{
-    // document.querySelector("#loader").className ="loader";
     json.forEach(element => {
-      document.getElementById("articles").innerHTML +=`
+      document.getElementById("articles-container").innerHTML +=`
+    <div class="article">
+    <table class="articles-table">
+        
+    <tbody>
     <tr>
-    <td>${element.id}</td>
-    <td>${element.name}</td>
-    <td>${element.username}</td>
-    <td>${element.email}</td>
+    <td rowspan="2"><p>${element.id}</p></td>
+    <td colspan="2"><h4>${element.name}</h4></td>
     </tr>
+
+    <tr>
+    <td rowspan="2"><p>${element.email}</p></td>
+    </tr>
+
+    </tbody>
+
+    </table>
+    </div>
     `
     });
   })

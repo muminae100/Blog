@@ -31,12 +31,10 @@ body{
 .material-icons .md-dark{
   background-color: rgba(0, 0, 0, .54);
 }
-.material-icons.md-36{
-    font-size: 36px;
-}
 .contacts{
   width: 100%;
   text-align: center;
+  padding: 10px;
 }
 .dropbtn {
     background-color: #242582;
@@ -75,9 +73,6 @@ body{
     }
     .featured-posts{
       flex-direction: column;
-    }
-    .about-author{
-      grid-template-rows: auto auto;
     }
   }
   @media screen and (max-width:1000px){
@@ -123,13 +118,25 @@ body{
  .author-image{
    border-radius: 50%;
  }
+ .article{
+   width: 90%;
+   margin: auto;
+ }
+ .articles-table{
+   padding: 30px;
+   width: 100%;
+   border: 1px solid black;
+   margin-bottom: 20px;
+ }
+ tr{
+  border: 1px solid black;
+ }
 
   h1{
     font-family: 'Montserrat', sans-serif;
   }
   p{
     font-family: 'Mulish', sans-serif;
-    padding: 20px;
   }
   h4,h2{
     font-family: 'Montserrat', sans-serif;
@@ -212,13 +219,13 @@ body{
     width: auto;
     margin-top: -22px;
     padding: 16px;
-    color: #242582;
+    color: white;
     font-weight: bold;
     font-size: 18px;
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
-    background-color: rgba(255, 255, 255, .8);
+    background-color: #242582;
   }
   
   /* Position the "next button" to the right */
@@ -286,13 +293,13 @@ body{
     from {opacity: .4}
     to {opacity: 1}
   }
-  .read-more-btn{
+  /* .read-more-btn{
     background-color: #242582;
     border: none;
     border-radius: 10px;
     padding: 20px;
     color: white;
-  }
+  } */
   .Featured-posts-title,.popular-posts-title{
     text-align: center;
     padding: 10px;
@@ -332,7 +339,7 @@ body{
     opacity: .9;
   }
   .featured-politics-img:hover,.featured-fashion-img:hover,.featured-sports-img:hover,.featured-music-img:hover{
-      opacity: 1;
+    opacity: 1;
   }
 
   

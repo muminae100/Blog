@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="../css/index.css">
     <title>Blog</title>
 </head>
-<body>
+<body id="body">
     <div class="nav-container">
         <a href="../html/index.html"><i class="material-icons md-24 md-light">home</i></a>
         <div class="dropdown">
@@ -46,31 +46,23 @@
             <div class="author-image-container">
                 <img class="author-image" src="../img/khali.jpeg" width="200px" height="200px">
             </div>
-            <p>I am a full stack web developer.</p>
+            <p style="padding: 20px;">I am a full stack web developer.</p>
             <div class="contacts">
 
-                <a href="http://www.twitter.com"><i class="fa fa-twitter" style="font-size:36px;color: blue;"></i></a>
-                <a href="http://www.facebook.com"><i class="fa fa-facebook" style="font-size:36px;color: blue;"></i></a>
-                <a href="http://www.instagram.com"><i class="fa fa-instagram" style="font-size:36px;color: blue;"></i></a>
-                <a href="http://www.muminaportfolio.com"><i class="fa fa-code" style="font-size:36px;color:blue;"></i></a>
-                <a href="http://www.github.com"><i class="fa fa-github" style="font-size:36px;color:blue;"></i></a>
-                <a href="http://www.linkedin.com"><i class="fa fa-linkedin" style="font-size:36px;color:blue;"></i></a>   
+                <a href="http://www.twitter.com"><i class="fa fa-twitter" style="font-size:30px;color: blue;"></i></a>
+                <a href="http://www.facebook.com"><i class="fa fa-facebook" style="font-size:30px;color: blue;"></i></a>
+                <a href="http://www.instagram.com"><i class="fa fa-instagram" style="font-size:30px;color: blue;"></i></a>
+                <a href="http://www.muminaportfolio.com"><i class="fa fa-code" style="font-size:30px;color:blue;"></i></a>
+                <a href="http://www.github.com"><i class="fa fa-github" style="font-size:30px;color:blue;"></i></a>
+                <a href="http://www.linkedin.com"><i class="fa fa-linkedin" style="font-size:30px;color:blue;"></i></a>   
             </div>
     
         </div>
 
         <h2>My articles</h2>
-        <table>
-            <thead>
-                <th>id</th>
-                <th>name</th>
-                <th>username</th>
-                <th>email</th>
-            </thead>
-            <tbody id="articles">
-
-            </tbody>
-        </table>
+        <div id="articles-container">
+           
+        </div>
     </div>
     <div class="space1"></div>
 
@@ -99,11 +91,7 @@
     <!-- Next and previous buttons -->
     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
     <a class="next" onclick="plusSlides(1)">&#10095;</a>
-    <div class="categories-info">
-        <h2>Politics</h2>
-        <p>These are politics articles</p>
-        <button class="read-more-btn">Read more</button>  
-      </div>
+
   </div>
   <br>
   
