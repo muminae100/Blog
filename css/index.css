@@ -1,0 +1,338 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+.nav-container{
+    width: 100%;
+    background-color: #242582;
+    font-family: 'Roboto', sans-serif;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    z-index: 1;
+}
+.logo{
+    color: white;
+    display: inline-block;
+    margin-left: 450px;
+    text-shadow: 0px 5px white;
+}
+.material-icons.md-24 { 
+  font-size: 24px; 
+}
+.material-icons.md-light {
+  color: rgba(255, 255, 255, 1); 
+}
+.material-icons .md-dark{
+  background-color: rgba(0, 0, 0, .54);
+}
+.material-icons.md-36{
+    font-size: 36px;
+}
+.contacts{
+  width: 100%;
+  text-align: center;
+}
+.dropbtn {
+    background-color: #242582;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+.menu-icon{
+    display: none;
+    float:right;
+}
+.more_vert{
+    float: right;
+    margin-right: 30px;
+}
+.search-icon{
+    float: right;
+    margin-right: 15px;
+}
+.account{
+  float: right;
+  margin-right: 10px;
+}
+  @media screen and (max-width:500px){
+    .menu-icon{
+    display: inline-block;
+    margin-right: 20px;
+    }
+    .more_vert{
+        display: none;
+    }
+    .logo{
+        display: none;
+    }
+    .featured-posts{
+      flex-direction: column;
+    }
+    .about-author{
+      grid-template-rows: auto auto;
+    }
+  }
+  @media screen and (max-width:1000px){
+      .logo{
+        display: none;
+      }
+  }
+ 
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    margin-left: 30px;
+}
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 1);
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+ .author-image-container{
+   width: 100%;
+   display: grid;
+   place-items: center;
+ }
+ .author-image{
+   border-radius: 50%;
+ }
+
+  h1{
+    font-family: 'Montserrat', sans-serif;
+  }
+  p{
+    font-family: 'Mulish', sans-serif;
+    padding: 20px;
+  }
+  h4,h2{
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+  }
+.space1{
+    height: 100px;
+}
+.space2{
+    height: 50px;
+}
+
+ /* The side navigation menu */
+ .sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  right: 0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: white;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 40px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  text-decoration: none;
+  text-align: center;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: black;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+/* #main {
+  transition: margin-left .5s;
+  padding: 20px;
+} */
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+} 
+
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1200px;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: #242582;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: rgba(255, 255, 255, .8);
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 1);
+    color: rgba(255, 255, 255, 1);
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: rgba(0, 0, 0, 1);
+  }
+  
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  .read-more-btn{
+    background-color: #242582;
+    border: none;
+    border-radius: 10px;
+    padding: 20px;
+    color: white;
+  }
+  .Featured-posts-title,.popular-posts-title{
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    width: 100%;
+  }
+  h2{
+    font-family: 'Montserrat', sans-serif;
+  }
+  .featured-posts{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+  }
+  .featured-posts > div{
+    background-color: #f1f1f1;
+    margin: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 350px;
+    height: 300px;
+  }
+  .featured{
+    position: relative;
+  }
+  .feature-text{
+    position: absolute;
+    left: 5px;
+    bottom: 25px;
+    font-weight: bold;
+    font-family: 'Mulish', sans-serif;
+    color: rgba(0, 0, 0, .8);
+  }
+  .featured-politics-img,.featured-fashion-img,.featured-sports-img,.featured-music-img{
+    width: 100%;
+    height: 80%;
+    opacity: .9;
+  }
+  .featured-politics-img:hover,.featured-fashion-img:hover,.featured-sports-img:hover,.featured-music-img:hover{
+      opacity: 1;
+  }
+
+  
