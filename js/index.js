@@ -34,7 +34,7 @@ function closeNav() {
   document.body.style.backgroundColor = "white";
 } 
 
-function getArticles(){
+function getAllArticles(){
   fetch('https://jsonplaceholder.typicode.com/users/')
   .then(response =>response.json()
   )
@@ -63,16 +63,38 @@ function getArticles(){
     });
   })
 }
-getArticles();
+getAllArticles();
 
-// function getFeaturedArticles(){
-//   fetch('https://jsonplaceholder.typicode.com/users/')
-//   .then(response => response.json()
-//   )
-//   .then(json =>{
+function getRecentArticles(){
+  fetch('https://jsonplaceholder.typicode.com/users/')
+  .then(response =>response.json()
+  )
+  .then(json =>{
+    document.querySelector("#loader").className = "loader";
+    json.forEach(element => {
+      document.getElementById("recent-articles-container").innerHTML +=`
+    <div class="recent-article">
+    <table class="recent-articles-table">
+        
+    <tbody>
+    <tr>
+    <td rowspan="2"><img src="img/biden.jpeg" width="150px" height="150px"></td>
+    <td colspan="2"><p>${element.name}</p></td>
+    </tr>
 
-//   })
-// }
+    <tr>
+    <td rowspan="2"><p>President Joe Biden to take the oath of office today!</p></td>
+    </tr>
+
+    </tbody>
+
+    </table>
+    </div>
+    `
+    });
+  })
+}
+getRecentArticles();
 
 
 
