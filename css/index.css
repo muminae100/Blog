@@ -129,14 +129,6 @@ body{
    margin-bottom: 20px;
    padding-left: 5px;
  }
- .recent-article{
-   margin-right: 30px;
-   margin-bottom: 20px;
-   display: inline-block;
- }
- .recent-articles-table{
-  border: 1px solid rgba(0, 0, 0, .7);
- }
   h1{
     font-family: 'Montserrat', sans-serif;
   }
@@ -149,10 +141,12 @@ body{
     text-align: center;
     font-weight: bold;
   }
-.space1,.space2,.space3{
+.space1,.space3{
     height: 100px;
 }
-
+.space2{
+  height: 20px;
+}
  /* The side navigation menu */
  .sidenav {
   height: 100%; /* 100% Full-height */
@@ -275,14 +269,31 @@ body{
 .slide-show-images-info-btn:hover{
   background-color: #242582;
 }
-  .recent-articles{
-    padding: 10px;
-    margin-top: 100px;
-    width: 100%;
-    text-align: center;
-    background-color: rgba(230, 230, 230);
+  .recent-posts-container{
+    margin-top: 150px;
   }
-
+  .recent-article{
+    margin: 10px;
+  }
+  .recent-articles-table{
+   border: 1px solid rgba(0, 0, 0, .7);
+  }
+  #recent-articles-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  #recent-articles-date{
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+    color: #242582;
+  }
+  .recent-articles-img{
+    opacity: .9;
+  }
+  .recent-articles-img:hover{
+    opacity: 1;
+  }
   .Featured-posts-title,.popular-posts-title{
     text-align: center;
     padding: 10px;
@@ -332,5 +343,4 @@ body{
   .popular-politics-img:hover,.popular-fashion-img:hover,.popular-sports-img:hover,.popular-music-img:hover{
     opacity: 1;
   }
-
   

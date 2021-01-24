@@ -78,14 +78,16 @@ function getRecentArticles(){
         
     <tbody>
     <tr>
-    <td rowspan="2"><img src="img/biden.jpeg" width="150px" height="150px"></td>
-    <td colspan="2"><p>${element.name}</p></td>
+    <td rowspan="3"><img class="recent-articles-img" src="img/biden.jpeg" width="100px" height="100px"></td>
+    <td style="color:#242582;">Politics</td>
     </tr>
 
     <tr>
-    <td rowspan="2"><p>President Joe Biden to take the oath of office today!</p></td>
+    <td>President Joe Biden of America</td>
     </tr>
-
+    <tr>
+    <td id="recent-articles-date">Jan. 25, 2021, 2.50 p.m.</td>
+    </tr>
     </tbody>
 
     </table>
