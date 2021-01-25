@@ -73,9 +73,16 @@ input[type=text] {
 }
 
 .search-container button:hover {
-  background-color: #99738E;
+  background-color: #f44336;
 }
-
+.account-container{
+   float:right;
+}
+.nav-links{
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+}
 
   @media screen and (max-width:500px){
     .menu-icon{
@@ -91,6 +98,13 @@ input[type=text] {
     .slide-image{
       max-width: 400px;
       height: auto;
+    }
+    .account-container{
+      display: none;
+    }
+    .search-container{
+      float: left;
+      margin-left: 20%;
     }
   }
   @media screen and (max-width:1000px){

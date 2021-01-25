@@ -31,6 +31,12 @@ function openNav() {
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 } 
+// var closeSidenav = "document.getElementById('mySidenav')";
+// window.onclick = function(event) {
+//   if (event.target == closeSidenav) {
+//    closeSidenav.style.width = "0";
+//  }
+// }
 
 function getAllArticles(){
   fetch('https://jsonplaceholder.typicode.com/users/')
