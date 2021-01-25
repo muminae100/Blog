@@ -53,14 +53,30 @@ body{
     float: right;
     margin-right: 30px;
 }
-.search-icon{
-    float: right;
-    margin-right: 15px;
-}
-.account{
+
+.search-container {
   float: right;
-  margin-right: 10px;
+
 }
+
+input[type=text] {
+  padding: 6px;
+  border: none;
+}
+
+.search-container button {
+  float: right;
+  padding: 6px 10px;
+  background: rgb(230, 230, 230);
+  border: none;
+  cursor: pointer;
+}
+
+.search-container button:hover {
+  background-color: #99738E;
+}
+
+
   @media screen and (max-width:500px){
     .menu-icon{
     display: inline-block;
