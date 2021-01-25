@@ -5,7 +5,7 @@ body{
     padding: 0;
     margin: 0;
     position: relative;
-    overflow-x: none;
+    overflow-x: hidden;
 }
 .nav-container{
     width: 100%;
@@ -23,8 +23,8 @@ body{
     margin-left: 450px;
     text-shadow: 0px 5px white;
 }
-.material-icons.md-24 { 
-  font-size: 24px; 
+.material-icons.md-26 { 
+  font-size: 26px; 
 }
 .material-icons.md-light {
   color: rgba(255, 255, 255, 1); 
@@ -40,10 +40,10 @@ body{
 .dropbtn {
     background-color: #242582;
     color: white;
-    padding: 16px;
-    font-size: 16px;
     border: none;
     cursor: pointer;
+    padding: 5px;
+    text-align: center;
 }
 .menu-icon{
     display: none;
@@ -51,12 +51,12 @@ body{
 }
 .more_vert{
     float: right;
-    margin-right: 30px;
+    margin:0px 30px;
 }
 
 .search-container {
   float: right;
-
+   margin-left: 10px;
 }
 
 input[type=text] {
@@ -157,10 +157,10 @@ input[type=text] {
     text-align: center;
     font-weight: bold;
   }
-.space1,.space3{
+.space1{
     height: 100px;
 }
-.space2{
+.space2,.space3{
   height: 20px;
 }
  /* The side navigation menu */
@@ -274,9 +274,9 @@ input[type=text] {
   font-family: 'Roboto', sans-serif;
 }
 .slide-show-images-info-btn{
-  padding: 20px;
-  border-radius: 30px;
-  background-color: black;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #242582;
   color: white;
   border: none;
   margin: 5px 0px 0px 0px;
@@ -360,3 +360,50 @@ input[type=text] {
     opacity: 1;
   }
   
+  .more-from-author-title{
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+  }
+  .more-from-author{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+  }
+  .more-from-author-img{
+    width: 500px;
+    margin: 10px;
+    opacity: .9;
+ }
+ .more-from-author-img:hover{
+    opacity: 1;
+ }
+ .more-from-author-info{
+   padding: 10px;
+   margin: 10px;
+ }
+ .more-from-author-btn{
+   border-radius: 10px;
+   padding: 15px;
+   border: none;
+   background-color: #242582;
+   color: white;
+   margin-top: 20px;
+ }
+ .more-articles{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+ }
+ .more-articles-imgs{
+   width: 300px;
+   height: 200px;
+   margin: 20px;
+   opacity: .9;
+ }
+ .more-articles-imgs:hover{
+   opacity: 1;
+ }
