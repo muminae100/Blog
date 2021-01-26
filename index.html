@@ -16,8 +16,9 @@
 </head>
 <body id="body">
     <div class="nav-container">
-        <a href="index.html"><i class="material-icons md-26 md-light">home</i></a>
-        <div class="dropdown">
+        <div class="topnav" id="myTopnav">
+          <a class="nav-links" href="index.html"><i class="material-icons md-26 md-light">home</i></a>
+          <div class=" dropdown">
             <button class="dropbtn">Blog</button>
             <div class="dropdown-content">
             <a href="#">Politics</a>
@@ -25,21 +26,32 @@
             <a href="#">Fashion</a>
             <a href="#">Music</a>
             </div>
-        </div>
-        <a class="nav-links" href="html/login.html">Login</a>
-        <a class="nav-links" href="html/register.html">Register</a>
-        <span class="material-icons md-26 md-light menu-icon">
-            menu
-        </span>
-        <span class="material-icons md-26 md-light more_vert" onclick="openNav()">more_vert</span>
-        <div class="search-container">
-            <form action="/action_page.php">
-              <input type="text" placeholder="Search for articles.." name="search">
-              <button type="submit"><i class="fa fa-search" style="color: black; "></i></button>
-            </form>
           </div>
-          <div class="account-container"><a href=""><i class="fa fa-user" style="color: white;margin-right: 10px;font-size: 26px;"></i></a></div>
-        <h3 style="padding: 0;margin-top: 0;" class="logo">Mumina</h3>
+          <a class="accordion">Blog</a>
+          <div class="panel">
+             <p><button class="topnav-blog-btn">Politics</button></p>
+             <p><button class="topnav-blog-btn">Sports</button></p>
+             <p><button class="topnav-blog-btn">Fashion</button></p>
+             <p><button class="topnav-blog-btn">Music</button></p>
+           </div>
+          <a class="nav-links" href="html/login.html">Login</a>
+          <a class="nav-links" href="html/register.html">Register</a>
+          <!-- <a class="account-icon" href="#"><i class="fa fa-user" style="color: white;margin-right: 10px;font-size: 26px;"></i></a> -->
+          
+          <a href="#" class="nav-links about-link" style="text-decoration: none;" onclick="openNav()">About the author</a>
+          
+        <a  href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars" style="color: white;font-size: 26px;"></i>
+        </a>
+        
+        </div>
+        <span href="#" style="text-decoration: none;" class="material-icons md-26 md-light about-icon" onclick="openNav()">more_vert</span>
+        <div class="search-container">
+          <form action="/action_page.php">
+            <input type="text" placeholder="Search for articles.." name="search">
+            <button type="submit"><i class="fa fa-search" style="color: black; "></i></button>
+          </form>
+        </div>
         
     </div>
 
@@ -75,46 +87,41 @@
             
         </div>
     </div>
-    <div class="space1"></div>
 
-
-    <!-- slide show images -->
-
-  <div id="slideshow-example" data-component="slideshow">
-    <div role="list">
-      <div class="slide">
-        <img class="slide-image" src="img/biden.jpeg">
-        <div class="slide-show-images-info">
-            <p>Politics</p>
-            <p>America</p>
-            <p>President Joe Biden is set to take the oauth of office today!</p>
-            <button class="slide-show-images-info-btn">Read more</button>
-      </div>
-      </div>
-      <div class="slide">
-        <img class="slide-image" src="img/fashion.jpeg">
-        <div class="slide-show-images-info">
-            <p>Fashion</p>
-            <p>America</p>
-            <p>America fashion week set to start next week in Washington D.C</p>
-            <button class="slide-show-images-info-btn">Read more</button>
-      </div>
-      </div>
-      <div class="slide">
-        <img class="slide-image" src="img/khali.jpeg">
-        <div class="slide-show-images-info">
-            <p>Music</p>
-            <p>Africa</p>
-            <p>Wavy by Khaligraph and sarkodie</p>
-            <button class="slide-show-images-info-btn">Read more</button>
-      </div>
-      </div>
+<h1>Blog</h1>
+<p style="padding-left: 50px;">Politics.Sports.International news.Entertainment.Music.Fashion and much more</p>
+<h2>Latest news</h2>
+<div class="section1-container">
+    <div class="latest-news">
+      <img class="latest-news-img" src="img/biden.jpeg">
     </div>
+    <div class="slide-show-images-info">
+      <p>Music</p>
+      <p>Africa</p>
+      <p>Wavy by Khaligraph and sarkodie</p>
+      <button class="slide-show-images-info-btn">Read more</button>
+      <h2>More latest news</h2>
+    </div>
+</div>
+<div class="article-info-and-ad">
+  <div class="email-subscription">
+    <p style="font-weight: bold;" class="email-subscription-elements">Email subscription.</p>
+    <p class="email-subscription-elements">Join 20,000 other followers</p>
+    <form class="email-subscription-elements email-subscription-form" action="#">
+      <label for="email">Email</label><br>
+      <input type="email"><br>
+      <button class="email-subscription-btn email-subscription-elements">Sign me up!</button>
+    </form>
   </div>
-  <br>
+  <div class="ad-container">
+    <img class="ad" src="img/ad1.jpeg">
+  </div>
+</div>
+  
 
     <div class="recent-posts-container">
-        <h2>Recent posts</h2>
+        <h2>Most recent posts</h2>
+        <div class="loader"></div>
         <div id="loader"></div>
         <div id="recent-articles-container">
             

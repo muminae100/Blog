@@ -1,28 +1,53 @@
-var slideshows = document.querySelectorAll('[data-component="slideshow"]');
+// var slideshows = document.querySelectorAll('[data-component="slideshow"]');
   
-// Apply to all slideshows that you define with the markup wrote
-slideshows.forEach(initSlideShow);
+// slideshows.forEach(initSlideShow);
 
-function initSlideShow(slideshow) {
+// function initSlideShow(slideshow) {
 
-  var slides = document.querySelectorAll(`#${slideshow.id} [role="list"] .slide`); // Get an array of slides
+//   var slides = document.querySelectorAll(`#${slideshow.id} [role="list"] .slide`); // Get an array of slides
 
-  var index = 0, time = 10000;
-  slides[index].classList.add('active');  
+//   var index = 0, time = 10000;
+//   slides[index].classList.add('active');  
   
-  setInterval( () => {
-    slides[index].classList.remove('active');
+//   setInterval( () => {
+//     slides[index].classList.remove('active');
     
-    //Go over each slide incrementing the index
-    index++;
-    
-    // If you go over all slides, restart the index to show the first slide and start again
-    if (index === slides.length) index = 0; 
-    
-    slides[index].classList.add('active');
 
-  }, time);
+//     index++;
+  
+//     if (index === slides.length) index = 0; 
+    
+//     slides[index].classList.add('active');
+
+//   }, time);
+// }
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
 }
+// Accordion
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    /* Toggle between adding and removing the "active" class,
+    to highlight the button that controls the panel */
+    this.classList.toggle("active");
+
+    /* Toggle between hiding and showing the active panel */
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+} 
 function openNav() {
   document.getElementById("mySidenav").style.width = "350px";
 }
