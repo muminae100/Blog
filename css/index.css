@@ -259,16 +259,26 @@ h1{
   flex-wrap: wrap;
   justify-content: center;
   width: 100%;
+  margin-bottom: 150px;
 }
 .section1-container > div {
   width: 600px;
-  height: 350px;
+  height: 400px;
   margin: 20px;
   padding: 15px;
 }
 .latest-news-img{
   width: 100%;
   height: 100%;
+}
+.latest-news-imgs{
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  opacity: .8;
+}
+.latest-news-imgs:hover{
+  opacity: 1;
 }
 .email-subscription{
   border: 2px solid #ddd;
@@ -291,6 +301,15 @@ h1{
   border-radius: 10px;
   border: none;
 }
+.email-subscription-btn:hover,.slide-show-images-info-btn:hover{
+  background-color: blue;
+}
+.more-svg{
+  opacity: .6;
+}
+.more-svg:hover{
+  opacity: 1;
+}
 
 .article-info-and-ad{
   display: flex;
@@ -309,17 +328,6 @@ h1{
   height: 100%;
 }
 
-
-
-
-
-
-
-
-
-
-
-
 .slide-show-images-info{
   width: 50%;
   padding: 20px;
@@ -332,9 +340,6 @@ h1{
   color: white;
   border: none;
   margin: 5px;
-}
-.slide-show-images-info-btn:hover{
-  background-color: #242582;
 }
   .recent-posts-container{
     margin-top: 100px;

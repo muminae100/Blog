@@ -68,7 +68,7 @@ function getAllArticles(){
   .then(response =>response.json()
   )
   .then(json =>{
-    // document.querySelector('#loader').className = "loader";
+    document.querySelector('#loader').className = "loader";
     json.forEach(element => {
       document.getElementById("articles-container").innerHTML +=`
     <div class="article">
